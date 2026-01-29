@@ -133,7 +133,7 @@
     <div class="container">
         <header>
             <h1>Gizlilik Politikası</h1>
-            <p class="date">Son Güncelleme: 28 Ocak 2026</p>
+            <p class="date">Son Güncelleme: 29 Ocak 2026</p>
             <p class="date">Veri Sorumlusu: Berkay Dastan</p>
         </header>
         
@@ -143,8 +143,9 @@
         
         <div class="section">
             <h2>1. GENEL BİLGİLER</h2>
-            <p>Bu Gizlilik Politikası, RadNLearn uygulamasının ("Uygulama", "Biz", "Bizim") kişisel verilerinizi nasıl topladığını, kullandığını, sakladığını, paylaştığını ve koruduğunu açıklamaktadır. Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve Avrupa Birliği Genel Veri Koruma Tüzüğü ("GDPR") kapsamında hazırlanmıştır.</p>
-            <p>Uygulamayı kullanarak, bu Gizlilik Politikasını kabul etmiş sayılırsınız. Eğer bu politikayı kabul etmiyorsanız, lütfen uygulamayı kullanmayın.</p>
+            <p>Bu Gizlilik Politikası, RadNLearn uygulamasının ("Uygulama", "Biz", "Bizim") verilerinizi nasıl topladığını, kullandığını, sakladığını, paylaştığını ve koruduğunu açıklamaktadır. Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve Avrupa Birliği Genel Veri Koruma Tüzüğü ("GDPR") kapsamında hazırlanmıştır.</p>
+            <p><strong>Misafir modu:</strong> Uygulama şu an hesap açmadan, misafir kullanıcı olarak kullanılmaktadır. Giriş veya kayıt zorunluluğu yoktur. Okuma ilerlemesi, favoriler, kalan hak bilgisi ve istatistikler yalnızca cihazınızda (yerel depolama – SharedPreferences) tutulur; bu veriler sunucuya gönderilmez.</p>
+            <p>Uygulamayı kullanarak bu Gizlilik Politikasını kabul etmiş sayılırsınız. Bu politikayı kabul etmiyorsanız lütfen uygulamayı kullanmayın.</p>
             <div class="contact-info">
                 <p><strong>Veri Sorumlusu:</strong> Berkay Dastan</p>
                 <p><strong>İletişim E-postası:</strong> <a href="mailto:dassimdevp@gmail.com">dassimdevp@gmail.com</a></p>
@@ -152,297 +153,174 @@
         </div>
         
         <div class="section">
-            <h2>2. TOPLANAN KİŞİSEL VERİLER</h2>
-            <p>Uygulamamız aşağıdaki kişisel verilerinizi toplamaktadır:</p>
+            <h2>2. TOPLANAN VE İŞLENEN VERİLER</h2>
             
-            <h3>2.1. Kimlik ve İletişim Bilgileri</h3>
+            <h3>2.1. Misafir modunda – sadece cihazda saklanan veriler (sunucuya gönderilmez)</h3>
+            <p>Hesap açmadan kullanıldığında aşağıdaki veriler <strong>yalnızca cihazınızda</strong> saklanır; sunucuya veya bize iletilmez:</p>
             <ul>
-                <li><strong>Kullanıcı Adı:</strong> Hesap oluşturma ve profil yönetimi için</li>
-                <li><strong>E-posta Adresi:</strong> Hesap oluşturma, kimlik doğrulama ve iletişim için</li>
-                <li><strong>Kullanıcı ID (UID):</strong> Benzersiz kullanıcı tanımlama için otomatik oluşturulur</li>
+                <li><strong>Okuma ilerlemesi:</strong> Okundu işaretlenen hikayeler, seri (streak) bilgisi</li>
+                <li><strong>Okuma süresi:</strong> Hikaye başına okuma süreleri</li>
+                <li><strong>Favori kelimeler:</strong> Favorilere eklediğiniz kelimeler</li>
+                <li><strong>Kalan hak / kredi bilgisi:</strong> Alıştırma hakları ve kullanım limiti bilgisi</li>
+                <li><strong>İstatistikler:</strong> Okuma ve alıştırma ile ilgili yerel istatistikler</li>
+            </ul>
+            <p>Bu veriler SharedPreferences (ve benzeri yerel depolama) ile cihazda tutulur. Uygulamayı sildiğinizde bu veriler de silinir. İleride hesap açma özelliği sunulursa, bu politika güncellenecektir.</p>
+            
+            <h3>2.2. Teknik ve Hata Verileri (Anonim / Üçüncü Taraf)</h3>
+            <ul>
+                <li><strong>Hata ve performans verileri:</strong> Firebase Crashlytics ve Firebase Performance Monitoring kullanılabilir; anonim teknik veri (hata türü, cihaz modeli, işletim sistemi) toplanabilir.</li>
+                <li><strong>IP adresi:</strong> İnternet üzerinden hikaye içeriği veya font indirme sırasında teknik olarak iletilen veriler; kalıcı kullanıcı profili oluşturmak için kullanılmaz.</li>
             </ul>
             
-            <h3>2.2. Hesap Bilgileri</h3>
+            <h3>2.3. Reklam Verileri</h3>
             <ul>
-                <li><strong>Şifre:</strong> Hesap güvenliği için (bcrypt ile şifrelenmiş olarak saklanır)</li>
-                <li><strong>E-posta Doğrulama Durumu:</strong> Hesap güvenliği için</li>
-                <li><strong>Hesap Oluşturma ve Güncelleme Tarihleri:</strong> Hesap yönetimi için</li>
+                <li><strong>Reklam kimliği (Advertising ID):</strong> Google AdMob reklam göstermek ve reklam performansını ölçmek için kullanılabilir.</li>
+                <li><strong>Reklam etkileşim verileri:</strong> Reklam tıklanması vb. etkileşimler AdMob tarafından işlenebilir.</li>
             </ul>
+            <p>Reklam kişiselleştirmesini cihaz ayarlarından kapatabilir veya reklam kimliğini sıfırlayabilirsiniz.</p>
             
-            <h3>2.3. KVKK Rıza Bilgileri</h3>
-            <ul>
-                <li><strong>Gizlilik Politikası Onayı:</strong> Yasal uyumluluk için (zorunlu)</li>
-                <li><strong>Pazarlama İletişimi Onayı:</strong> Pazarlama izni için (opsiyonel)</li>
-                <li><strong>Onay Tarihleri ve Versiyonları:</strong> Rıza kayıtları için</li>
-            </ul>
-            
-            <h3>2.4. Kullanım Verileri</h3>
-            <ul>
-                <li><strong>Okunan Hikayeler:</strong> Okuma geçmişi ve ilerleme takibi için</li>
-                <li><strong>Okuma Tarihleri:</strong> İstatistik ve analiz için</li>
-                <li><strong>Favori Kelimeler:</strong> Kişiselleştirme için (sadece cihazın yerel depolamasında saklanır, sunucuya gönderilmez)</li>
-                <li><strong>Kalan Hak Sayısı:</strong> Kullanım limiti yönetimi için</li>
-                <li><strong>Reklam Etkileşim Verileri:</strong> Reklam performansı için</li>
-            </ul>
-            
-            <h3>2.5. Teknik Veriler</h3>
-            <ul>
-                <li><strong>Cihaz Bilgileri:</strong> Hata ayıklama ve uyumluluk için (model, işletim sistemi, versiyon)</li>
-                <li><strong>IP Adresi:</strong> Güvenlik ve hata ayıklama için (geçici loglar)</li>
-                <li><strong>Hata Logları:</strong> Uygulama stabilitesi için (Firebase Crashlytics)</li>
-                <li><strong>Performans Metrikleri:</strong> Performans optimizasyonu için (Firebase Performance Monitoring)</li>
-            </ul>
-            
-            <h3>2.6. Reklam Verileri</h3>
-            <ul>
-                <li><strong>Reklam Kimliği (Advertising ID):</strong> Reklam gösterimi ve analiz için (Google AdMob tarafından)</li>
-                <li><strong>Reklam Etkileşim Verileri:</strong> Reklam performansı için</li>
-            </ul>
+            <h3>2.4. Hikaye İçeriği ve İnternet</h3>
+            <p>Hikaye metinleri, uygulama açıldığında internet üzerinden (Firestore veya benzeri altyapı) çekilebilir veya uygulama içindeki yerel dosyalardan (JSON) okunabilir. Bu işlem <strong>kullanıcı kimliği gerektirmez</strong>; misafir kullanımda sunucuya kimlik, e-posta veya okuma geçmişiniz gönderilmez.</p>
         </div>
         
         <div class="section">
             <h2>3. VERİ TOPLAMA AMAÇLARI</h2>
-            <p>Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:</p>
+            <p>Veriler aşağıdaki amaçlarla işlenmektedir:</p>
             <ol>
-                <li><strong>Hizmet Sunumu:</strong> Hesap oluşturma, kimlik doğrulama, uygulama özelliklerinin sağlanması</li>
-                <li><strong>Kullanıcı Deneyimi:</strong> Kişiselleştirilmiş içerik, okuma geçmişi, favori kelimeler yönetimi</li>
-                <li><strong>Analiz ve İstatistik:</strong> Uygulama kullanım istatistikleri, performans optimizasyonu</li>
-                <li><strong>Güvenlik:</strong> Hesap güvenliği, hata tespiti, kötüye kullanım önleme</li>
-                <li><strong>Reklam:</strong> Reklam gösterimi ve performans ölçümü</li>
-                <li><strong>Yasal Uyumluluk:</strong> KVKK ve GDPR gereksinimlerinin karşılanması</li>
+                <li><strong>Hizmet sunumu:</strong> Okuma, alıştırma ve favori özelliklerinin cihazda doğru çalışması; ilerleme ve hak bilgisinin cihazda saklanması</li>
+                <li><strong>Kullanıcı deneyimi:</strong> Okuma geçmişi, favori kelimeler ve istatistiklerin cihazda tutularak kişiselleştirilmiş deneyim sunulması</li>
+                <li><strong>Reklam:</strong> Reklam gösterimi ve performans ölçümü (AdMob)</li>
+                <li><strong>Teknik iyileştirme:</strong> Hata tespiti ve performans optimizasyonu (anonim teknik veriler)</li>
+                <li><strong>Yasal uyumluluk:</strong> KVKK ve GDPR gereksinimlerinin karşılanması</li>
             </ol>
         </div>
         
         <div class="section">
             <h2>4. VERİ İŞLEME HUKUKİ SEBEPLERİ</h2>
-            <p>Kişisel verileriniz aşağıdaki hukuki sebeplere dayanarak işlenmektedir (KVKK Madde 5, GDPR Madde 6):</p>
+            <p>Verileriniz aşağıdaki hukuki sebeplere dayanarak işlenmektedir (KVKK Madde 5, GDPR Madde 6):</p>
             <ol>
-                <li><strong>Açık Rıza:</strong> Gizlilik politikası ve pazarlama onayları</li>
-                <li><strong>Sözleşmenin Kurulması veya İfası:</strong> Uygulama hizmetlerinin sunulması</li>
-                <li><strong>Yasal Yükümlülük:</strong> KVKK ve ilgili mevzuat gereksinimleri</li>
-                <li><strong>Meşru Menfaat:</strong> Güvenlik, hata ayıklama, hizmet iyileştirme</li>
+                <li><strong>Sözleşmenin ifası:</strong> Uygulama hizmetlerinin sunulması (yerel ilerleme, favoriler, hak yönetimi)</li>
+                <li><strong>Meşru menfaat:</strong> Güvenlik, hata ayıklama, hizmet ve performans iyileştirme</li>
+                <li><strong>Açık rıza:</strong> Reklam kişiselleştirmesi veya isteğe bağlı özellikler için (uygulanan yerlerde)</li>
+                <li><strong>Yasal yükümlülük:</strong> KVKK ve ilgili mevzuat gereksinimleri</li>
             </ol>
         </div>
         
         <div class="section">
             <h2>5. VERİ PAYLAŞIMI VE ÜÇÜNCÜ TARAFLAR</h2>
-            <p>Kişisel verileriniz, hizmetlerimizin sunulması amacıyla aşağıdaki üçüncü taraflara aktarılabilir:</p>
             
-            <h3>5.1. Google Firebase</h3>
+            <h3>5.1. Misafir Modunda Sunucuya Gönderilen Veri</h3>
+            <p>Misafir kullanımda <strong>kimlik, e-posta, kullanıcı adı veya okuma ilerlemeniz</strong> sunucuya gönderilmez. İlerleme, favoriler ve hak bilgisi yalnızca cihazınızda kalır.</p>
+            
+            <h3>5.2. Üçüncü Taraflar</h3>
+            <p>Hizmetlerin sunulması amacıyla aşağıdaki üçüncü taraflarla veri paylaşımı yapılabilir:</p>
+            
+            <p><strong>Google Firebase (Firestore / Crashlytics / Performance)</strong></p>
             <ul>
-                <li><strong>Amaç:</strong> Veri depolama, kimlik doğrulama, hata ayıklama, performans izleme</li>
-                <li><strong>Paylaşılan Veriler:</strong> Kullanıcı adı, e-posta, kullanıcı ID, kullanım verileri, hata logları (Firebase Crashlytics), performans metrikleri (Firebase Performance Monitoring)</li>
-                <li><strong>Veri Merkezi:</strong> ABD, Avrupa, Asya (Firebase'in seçtiği bölge)</li>
-                <li><strong>Gizlilik Politikası:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
-                <li><strong>Not:</strong> Favori kelimeler Firebase'e gönderilmez, sadece cihazın yerel depolamasında saklanır</li>
+                <li><strong>Amaç:</strong> Hikaye içeriği sağlama (anonim), hata ve performans izleme</li>
+                <li><strong>Paylaşılan veriler (misafir):</strong> Kimlik bilgisi gönderilmez; teknik/hata verileri anonim olarak işlenebilir</li>
+                <li><strong>Gizlilik:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
             </ul>
             
-            <h3>5.2. Google AdMob</h3>
+            <p><strong>Google AdMob</strong></p>
             <ul>
                 <li><strong>Amaç:</strong> Reklam gösterimi ve performans ölçümü</li>
-                <li><strong>Paylaşılan Veriler:</strong> Reklam kimliği, cihaz bilgileri, reklam etkileşim verileri</li>
-                <li><strong>Veri Merkezi:</strong> ABD, Avrupa, Asya</li>
-                <li><strong>Gizlilik Politikası:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-                <li><strong>Kullanıcı Kontrolü:</strong> Kullanıcılar cihaz ayarlarından reklam kişiselleştirmesini kapatabilir</li>
+                <li><strong>Paylaşılan veriler:</strong> Reklam kimliği, cihaz bilgileri, reklam etkileşim verileri</li>
+                <li><strong>Gizlilik:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                <li><strong>Kullanıcı kontrolü:</strong> Cihaz ayarlarından reklam kişiselleştirmesini kapatabilirsiniz</li>
             </ul>
             
-            <h3>5.3. Google Fonts</h3>
+            <p><strong>Google Fonts</strong></p>
             <ul>
                 <li><strong>Amaç:</strong> Font dosyalarının indirilmesi</li>
-                <li><strong>Paylaşılan Veriler:</strong> IP adresi (teknik veri)</li>
-                <li><strong>Veri Merkezi:</strong> ABD</li>
-                <li><strong>Gizlilik Politikası:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                <li><strong>Paylaşılan veriler:</strong> IP adresi (teknik veri)</li>
+                <li><strong>Gizlilik:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
             </ul>
             
-            <h3>5.4. Yurt Dışına Veri Aktarımı (KVKK Madde 9)</h3>
-            <p>Kişisel verileriniz, uygulama altyapısının sağlanması amacıyla Google Firebase ve Google AdMob sunucularının bulunduğu yurt dışındaki veri merkezlerinde (ABD, Avrupa, Asya), KVKK Madde 9 uyarınca Standart Sözleşme Maddeleri (SCC) ve uluslararası veri güvenliği standartları kapsamında korunarak saklanmaktadır.</p>
+            <h3>5.3. Yurt Dışına Veri Aktarımı (KVKK Madde 9)</h3>
+            <p>Reklam ve teknik altyapı nedeniyle veriler, KVKK Madde 9 uyarınca yurt dışındaki sunucularda (ABD, Avrupa, Asya) işlenebilir. Misafir kullanımda <strong>kişisel kimlik veriniz</strong> (ad, e-posta, hesap bilgisi) toplanmadığı için bu aktarım ağırlıklı olarak anonim teknik ve reklam verileriyle sınırlıdır.</p>
         </div>
         
         <div class="section">
             <h2>6. VERİ GÜVENLİĞİ</h2>
-            <p>Kişisel verilerinizin güvenliği için aşağıdaki teknik ve idari önlemler alınmaktadır:</p>
-            
-            <h3>6.1. Teknik Önlemler</h3>
-            
-            <h4>6.1.1. Şifreleme ve Veri Koruma</h4>
             <ul>
-                <li><strong>Şifre Şifreleme:</strong> Kullanıcı şifreleri Firebase Authentication tarafından bcrypt algoritması ile şifrelenir ve güvenli bir şekilde saklanır</li>
-                <li><strong>HTTPS Protokolü:</strong> Tüm veri aktarımları HTTPS (SSL/TLS) protokolü üzerinden şifrelenmiş olarak gerçekleştirilir</li>
-                <li><strong>Güvenli Depolama:</strong> Hassas veriler için Flutter Secure Storage kullanılır (AES şifreleme ile)</li>
-                <li><strong>Android EncryptedSharedPreferences:</strong> Android cihazlarda hassas veriler şifrelenmiş SharedPreferences'ta saklanır</li>
-                <li><strong>iOS Keychain:</strong> iOS cihazlarda hassas veriler Keychain'de güvenli bir şekilde saklanır</li>
+                <li><strong>Yerel veri:</strong> Cihazda saklanan ilerleme, favori ve hak bilgisi yerel depolama (SharedPreferences) ile korunur; uygulama silindiğinde bu veriler de silinir.</li>
+                <li><strong>İletişim:</strong> İnternet üzerinden tüm veri aktarımlarında HTTPS (SSL/TLS) kullanılır.</li>
+                <li><strong>Kod güvenliği:</strong> Android sürümlerinde ProGuard/R8 ile kod karartma uygulanır; production'da hassas bilgiler loglanmaz.</li>
+                <li><strong>Üçüncü taraf:</strong> Firebase ve AdMob'un kendi güvenlik ve gizlilik politikaları geçerlidir.</li>
             </ul>
-            
-            <h4>6.1.2. Erişim Kontrolü ve Yetkilendirme</h4>
-            <ul>
-                <li><strong>Firestore Security Rules:</strong> Kullanıcılar sadece kendi verilerine erişebilir, başka kullanıcıların verilerine erişim engellenir</li>
-                <li><strong>Kimlik Doğrulama:</strong> Tüm veri erişimleri Firebase Authentication ile kimlik doğrulama gerektirir</li>
-                <li><strong>Admin Kontrolü:</strong> Admin yetkileri Firestore'daki <code>admins</code> koleksiyonundan kontrol edilir, hardcoded admin bilgisi bulunmaz</li>
-                <li><strong>Privilege Escalation Koruması:</strong> Kullanıcılar kendi dokümanlarındaki admin alanlarını değiştiremez</li>
-                <li><strong>Role-Based Access Control:</strong> Admin ve normal kullanıcı rolleri ayrılmıştır</li>
-            </ul>
-            
-            <h4>6.1.3. Brute-Force ve Saldırı Koruması</h4>
-            <ul>
-                <li>
-                    <strong>Rate Limiting:</strong> Giriş, kayıt ve şifre sıfırlama işlemlerinde rate limiting uygulanır
-                    <ul>
-                        <li>Giriş: 5 başarısız deneme sonrası 15 dakika kilit</li>
-                        <li>Kayıt: 3 başarısız deneme sonrası 15 dakika kilit</li>
-                        <li>Şifre Sıfırlama: 3 başarısız deneme sonrası 15 dakika kilit</li>
-                    </ul>
-                </li>
-                <li><strong>Otomatik Kilit:</strong> Şüpheli aktivite tespit edildiğinde otomatik olarak hesap kilitlenir</li>
-                <li><strong>Başarılı İşlem Sonrası Sıfırlama:</strong> Başarılı işlemlerden sonra rate limit sayaçları sıfırlanır</li>
-            </ul>
-            
-            <h4>6.1.4. Input Validation ve Güvenlik Kontrolleri</h4>
-            <ul>
-                <li><strong>XSS Koruması:</strong> Zararlı HTML/JavaScript kodları (script, iframe, vb.) filtrelenir</li>
-                <li><strong>SQL Injection Koruması:</strong> SQL injection saldırılarına karşı input validasyonu yapılır</li>
-                <li><strong>DoS Koruması:</strong> Çok uzun veri girişlerine karşı maksimum uzunluk kontrolleri uygulanır</li>
-                <li><strong>Email Validasyonu:</strong> E-posta adresleri format ve güvenlik kontrolünden geçirilir</li>
-                <li><strong>Şifre Validasyonu:</strong> Şifreler minimum 6, maksimum 128 karakter olmalıdır</li>
-                <li><strong>İsim Validasyonu:</strong> Kullanıcı isimleri zararlı karakterlerden arındırılır</li>
-                <li><strong>Dosya Yükleme Kontrolü:</strong> Dosya tipi ve boyutu kontrolleri yapılır (maksimum 10MB)</li>
-            </ul>
-            
-            <h4>6.1.5. Kod Güvenliği</h4>
-            <ul>
-                <li><strong>Code Obfuscation:</strong> Android release build'lerde ProGuard/R8 ile kod karartma aktif edilmiştir</li>
-                <li><strong>Resource Shrinking:</strong> Kullanılmayan kaynaklar build'den çıkarılır</li>
-                <li><strong>Minification:</strong> Kod boyutu küçültülür ve okunabilirlik azaltılır</li>
-                <li><strong>Güvenli Logging:</strong> Production'da hassas bilgiler loglanmaz, sadece kritik hatalar kaydedilir</li>
-            </ul>
-            
-            <h4>6.1.6. Veri İzleme ve Denetim</h4>
-            <ul>
-                <li><strong>Audit Logging:</strong> Kritik işlemler (admin işlemleri, veri silme, güvenlik olayları) audit log olarak kaydedilir</li>
-                <li><strong>Güvenlik Olayı Takibi:</strong> Güvenlik ihlalleri ve şüpheli aktiviteler loglanır</li>
-                <li><strong>Veri Erişim Kayıtları:</strong> Veri erişim faaliyetleri izlenir (sadece kritik seviyelerde)</li>
-                <li><strong>Hata İzleme:</strong> Firebase Crashlytics ile uygulama hataları izlenir ve güvenlik açıkları tespit edilir</li>
-                <li><strong>Performans İzleme:</strong> Firebase Performance Monitoring ile performans metrikleri izlenir</li>
-            </ul>
-            
-            <h4>6.1.7. Veri İhlali Bildirimi Altyapısı</h4>
-            <ul>
-                <li><strong>Cloud Functions:</strong> Güvenlik uyarıları ve veri ihlali tespiti için Cloud Functions altyapısı hazırdır</li>
-                <li><strong>72 Saat Bildirim:</strong> KVKK Madde 12 uyarınca veri ihlali durumunda 72 saat içinde bildirim yapılması için altyapı mevcuttur</li>
-                <li><strong>Otomatik Tespit:</strong> Yetkisiz erişim ve admin paneli anomalileri otomatik olarak tespit edilir</li>
-            </ul>
-            
-            <h3>6.2. İdari Önlemler</h3>
-            <ul>
-                <li><strong>Personel Eğitimi:</strong> Veri güvenliği konusunda personel eğitimi</li>
-                <li><strong>Güvenlik Denetimleri:</strong> Düzenli güvenlik denetimleri ve kod incelemeleri</li>
-                <li><strong>Veri İşleme Kayıtları:</strong> Veri işleme faaliyetlerinin kayıt altına alınması</li>
-                <li><strong>Güvenlik Politikaları:</strong> Güvenlik politikalarının düzenli olarak gözden geçirilmesi ve güncellenmesi</li>
-                <li><strong>Yedekleme ve Kurtarma:</strong> Düzenli veri yedekleme ve olağanüstü durum kurtarma planları</li>
-            </ul>
-            
-            <h3>6.3. Üçüncü Taraf Güvenlik Standartları</h3>
-            <ul>
-                <li><strong>Firebase Güvenlik:</strong> Google Firebase'in endüstri standardı güvenlik önlemleri kullanılır</li>
-                <li><strong>SCC (Standard Contractual Clauses):</strong> Yurt dışına veri aktarımında Standart Sözleşme Maddeleri uygulanır</li>
-                <li><strong>GDPR Uyumluluk:</strong> Avrupa Birliği Genel Veri Koruma Tüzüğü gereksinimlerine uyumluluk sağlanır</li>
-                <li><strong>KVKK Uyumluluk:</strong> 6698 sayılı Kişisel Verilerin Korunması Kanunu gereksinimlerine uyumluluk sağlanır</li>
-            </ul>
-            
             <div class="important">
-                <p><strong>Önemli:</strong> İnternet üzerinden veri aktarımının %100 güvenli olması mümkün değildir. Verilerinizi korumak için elimizden geleni yapıyoruz, ancak mutlak güvenlik garanti edilemez. Kullanıcılarımızın da güvenlik konusunda dikkatli olmaları (güçlü şifre kullanımı, şifre paylaşmama, vb.) önemlidir.</p>
+                <p><strong>Önemli:</strong> İnternet üzerinden veri aktarımının %100 güvenli olması mümkün değildir; verilerinizi korumak için makul teknik önlemler alınmaktadır.</p>
             </div>
         </div>
         
         <div class="section">
             <h2>7. VERİ SAKLAMA SÜRELERİ</h2>
-            <p>Kişisel verileriniz, işleme amacının gerektirdiği süre boyunca saklanmaktadır:</p>
             <ul>
-                <li><strong>Hesap Verileri:</strong> Hesap aktif olduğu sürece</li>
-                <li><strong>Kullanım Verileri:</strong> Hesap aktif olduğu sürece</li>
-                <li><strong>Favori Kelimeler:</strong> Uygulama silindiğinde anında silinir (sadece cihazın yerel depolamasında saklandığı için)</li>
-                <li><strong>Rıza Kayıtları:</strong> Yasal saklama süresi (5 yıl)</li>
-                <li><strong>Hata Logları:</strong> 90 gün (Firebase Crashlytics)</li>
-                <li><strong>Performans Verileri:</strong> 30 gün (Firebase Performance Monitoring)</li>
+                <li><strong>Cihazda saklanan veriler (misafir):</strong> Uygulama yüklü olduğu sürece cihazda kalır; <strong>uygulama silindiğinde</strong> bu veriler cihazdan silinir. Sunucuda misafir kullanıcıya ait ilerleme veya kimlik verisi tutulmaz.</li>
+                <li><strong>Hata / performans logları:</strong> Üçüncü tarafların (ör. Firebase Crashlytics) kendi saklama süreleri geçerlidir (genelde 30–90 gün civarı).</li>
+                <li><strong>Reklam verileri:</strong> AdMob'un kendi saklama politikası uygulanır.</li>
             </ul>
-            <p>Hesabınızı sildiğinizde, tüm kişisel verileriniz 30 gün içinde kalıcı olarak silinir. Yasal saklama yükümlülükleri bulunması halinde, ilgili mevzuatın öngördüğü süre boyunca verileriniz saklanabilir.</p>
+            <p>İleride hesap açma özelliği eklenirse, hesap ve sunucu tarafı veri saklama süreleri bu politikada güncellenecektir.</p>
         </div>
         
         <div class="section">
             <h2>8. KVKK VE GDPR KAPSAMINDAKİ HAKLARINIZ</h2>
             
-            <h3>8.1. KVKK Madde 11 Kapsamındaki Haklarınız</h3>
-            <p>KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:</p>
-            <ol>
-                <li><strong>Bilgi Talep Etme:</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-                <li><strong>Erişim:</strong> İşlenmişse bilgi talep etme</li>
-                <li><strong>Amaç Kontrolü:</strong> İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-                <li><strong>Aktarım Bilgisi:</strong> Yurt içi/yurt dışı aktarılan üçüncü kişileri bilme</li>
-                <li><strong>Düzeltme:</strong> Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
-                <li><strong>Silme:</strong> KVKK'da öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
-                <li><strong>Bildirim:</strong> Düzeltme, silme, yok etme işlemlerinin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
-                <li><strong>İtiraz:</strong> İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
-                <li><strong>Zararın Giderilmesi:</strong> Kanuna aykırı işlenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
-            </ol>
+            <h3>8.1. KVKK Madde 11 ve GDPR Kapsamındaki Haklar</h3>
+            <p>Bilgi talep etme, erişim, amaç kontrolü, düzeltme, silme, itiraz ve zararın giderilmesi talebi dahil KVKK ve GDPR'da sayılan haklara sahipsiniz.</p>
             
-            <h3>8.2. GDPR Kapsamındaki Haklarınız</h3>
-            <p>GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
-            <ol>
-                <li><strong>Erişim Hakkı:</strong> Kişisel verilerinize erişim talep etme</li>
-                <li><strong>Düzeltme Hakkı:</strong> Yanlış verilerin düzeltilmesini isteme</li>
-                <li><strong>Silme Hakkı ("Unutulma Hakkı"):</strong> Verilerinizin silinmesini isteme</li>
-                <li><strong>İşleme Kısıtlama Hakkı:</strong> Verilerinizin işlenmesinin kısıtlanmasını isteme</li>
-                <li><strong>Veri Taşınabilirliği Hakkı:</strong> Verilerinizi yapılandırılmış formatta alma</li>
-                <li><strong>İtiraz Hakkı:</strong> Verilerinizin işlenmesine itiraz etme</li>
-                <li><strong>Otomatik Karar Verme:</strong> Otomatik karar verme süreçlerine itiraz etme</li>
-            </ol>
-            
-            <h3>8.3. Haklarınızı Kullanma</h3>
-            <p>Bu haklarınızı kullanmak için <a href="mailto:dassimdevp@gmail.com">dassimdevp@gmail.com</a> adresine e-posta gönderebilirsiniz. Talebiniz en geç 30 gün içinde yanıtlanacaktır.</p>
-            <p><strong>Hesap Silme:</strong> Uygulama içinde profil ekranından "Hesabı Sil" butonuna tıklayarak hesabınızı ve tüm verilerinizi silebilirsiniz.</p>
+            <h3>8.2. Misafir Modunda Haklarınızı Kullanma</h3>
+            <ul>
+                <li><strong>Cihazdaki veriler:</strong> İlerleme, favoriler ve istatistikler sadece cihazınızda olduğu için, bu verileri silmek için <strong>uygulamayı kaldırmanız</strong> yeterlidir.</li>
+                <li><strong>Reklam ve teknik veriler:</strong> Reklam kimliğini cihaz ayarlarından sıfırlayabilir; reklam kişiselleştirmesini kapatabilirsiniz.</li>
+                <li><strong>Başvuru:</strong> Kişisel veri işlenip işlenmediğini öğrenmek, silme veya diğer talepleriniz için <a href="mailto:dassimdevp@gmail.com">dassimdevp@gmail.com</a> adresine yazabilirsiniz. Talepleriniz en geç 30 gün içinde yanıtlanacaktır.</li>
+            </ul>
+            <p>Şu an hesap açma olmadığı için sunucuda sizinle eşleştirilmiş bir hesap verisi bulunmamaktadır; ancak reklam veya teknik verilerle ilgili taleplerinizi iletebilirsiniz.</p>
         </div>
         
         <div class="section">
-            <h2>9. ÇEREZLER VE BENZERİ TEKNOLOJİLER</h2>
-            <p>Uygulamamız, hizmet kalitesini artırmak amacıyla çerezler ve benzeri teknolojiler kullanmaktadır:</p>
+            <h2>9. YEREL DEPOLAMA (ÇEREZLER VE BENZERİ TEKNOLOJİLER)</h2>
+            <p>Uygulama, hizmetin doğru çalışması için aşağıdaki yerel depolama türlerini kullanır:</p>
             <ul>
-                <li><strong>Yerel Depolama (SharedPreferences):</strong> Kullanıcı tercihleri ve cache verileri için</li>
-                <li><strong>Güvenli Depolama (Flutter Secure Storage):</strong> Hassas verilerin şifrelenmiş saklanması için</li>
+                <li><strong>SharedPreferences:</strong> Okuma ilerlemesi, favoriler, kalan hak, istatistikler ve tercihler (sadece cihazda).</li>
+                <li><strong>Güvenli depolama (Flutter Secure Storage / Keychain):</strong> Gerekirse hassas ayar verileri (şifrelenmiş) cihazda saklanabilir.</li>
             </ul>
-            <p>Bu teknolojiler, uygulama deneyiminizi iyileştirmek için kullanılır ve kişisel verileriniz üçüncü taraflarla paylaşılmaz.</p>
+            <p>Bu veriler sunucuya gönderilmez; üçüncü taraflarla paylaşılmaz.</p>
         </div>
         
         <div class="section">
             <h2>10. ÇOCUKLARIN GİZLİLİĞİ</h2>
-            <p>Uygulamamız 13 yaş altındaki çocuklardan bilerek kişisel veri toplamamaktadır. 13-18 yaş arası kullanıcılar için veli izni gereklidir. Eğer 13 yaş altında bir çocuğun kişisel verilerini topladığımızı fark edersek, bu verileri derhal sileriz.</p>
+            <p>Uygulama 13 yaş altındaki çocuklardan bilerek kişisel veri toplamamaktadır. Misafir modunda zaten kimlik bilgisi toplanmaz; 13–18 yaş arası kullanıcılar için veli bilgilendirmesi önerilir. 13 yaş altında bir çocuğa ait kişisel veri toplandığı tespit edilirse bu veriler derhal silinir.</p>
         </div>
         
         <div class="section">
             <h2>11. REKLAM KİŞİSELLEŞTİRMESİ</h2>
             <p>Uygulamamız Google AdMob kullanarak reklam gösterir. Reklam kişiselleştirmesi için reklam kimliği (Advertising ID) kullanılabilir. Kullanıcılar, cihaz ayarlarından reklam kişiselleştirmesini kapatabilir veya reklam kimliğini sıfırlayabilir.</p>
-            <p><strong>Android:</strong> Ayarlar &gt; Google &gt; Reklamlar &gt; Reklam kişiselleştirmesini kapat</p>
-            <p><strong>iOS:</strong> Ayarlar &gt; Gizlilik &gt; Apple Reklamları &gt; Reklam Kişiselleştirmesini Kapat</p>
+            <p><strong>Android:</strong> Ayarlar > Google > Reklamlar > Reklam kişiselleştirmesini kapat</p>
+            <p><strong>iOS:</strong> Ayarlar > Gizlilik > Apple Reklamları > Reklam Kişiselleştirmesini Kapat</p>
         </div>
         
         <div class="section">
             <h2>12. VERİ İHLALİ BİLDİRİMİ</h2>
-            <p>Kişisel verilerinizin hukuka aykırı olarak işlenmesi veya erişilmesi durumunda, KVKK Madde 12 uyarınca 72 saat içinde KVKK'ya bildirim yapılacak ve etkilenen kişilere de bildirim yapılacaktır.</p>
+            <p>Kişisel verilerinizin hukuka aykırı işlenmesi veya yetkisiz erişime maruz kalması durumunda, KVKK Madde 12 uyarınca 72 saat içinde Kurula bildirim yapılacak ve etkilenen kişilere de bilgi verilecektir. Misafir modunda sunucuda kimlik verisi tutulmadığı için ihlal riski ağırlıklı olarak reklam veya teknik veri işleyen üçüncü taraflarla sınırlıdır.</p>
         </div>
         
         <div class="section">
             <h2>13. DEĞİŞİKLİKLER</h2>
-            <p>Bu Gizlilik Politikası, yasal düzenlemelerdeki değişiklikler veya uygulama güncellemeleri nedeniyle güncellenebilir. Önemli değişiklikler durumunda size bildirim yapılacak ve uygulama içinde güncel politika gösterilecektir.</p>
-            <p><strong>Son Güncelleme:</strong> 28 Ocak 2026</p>
+            <p>Bu Gizlilik Politikası, yasal düzenlemeler veya uygulama güncellemeleri (örneğin hesap açma özelliğinin eklenmesi) nedeniyle güncellenebilir. Önemli değişikliklerde uygulama içinde veya uygun kanallarla bilgilendirme yapılacaktır.</p>
+            <p><strong>Son Güncelleme:</strong> 29 Ocak 2026</p>
         </div>
         
         <div class="section">
             <h2>14. İLETİŞİM</h2>
-            <p>Gizlilik politikamız hakkında sorularınız, talepleriniz veya şikayetleriniz için:</p>
+            <p>Gizlilik politikası, veri talepleri veya şikayetleriniz için:</p>
             <div class="contact-info">
                 <p><strong>E-posta:</strong> <a href="mailto:dassimdevp@gmail.com">dassimdevp@gmail.com</a></p>
                 <p><strong>Veri Sorumlusu:</strong> Berkay Dastan</p>
-                <p>KVKK ve GDPR başvurularınızı yukarıdaki iletişim bilgileri üzerinden yapabilirsiniz.</p>
+                <p>KVKK ve GDPR kapsamındaki başvurularınızı yukarıdaki iletişim bilgileri üzerinden yapabilirsiniz.</p>
             </div>
-            <p style="margin-top: 20px;"><strong>Bu Gizlilik Politikası, KVKK ve GDPR gereksinimlerine uygun olarak hazırlanmıştır.</strong></p>
+            <p style="margin-top: 20px;"><strong>Bu Gizlilik Politikası, misafir kullanım ve yerel veri odaklı güncel uygulama yapısına göre hazırlanmış olup, KVKK ve GDPR ile uyumludur.</strong></p>
         </div>
         
         <footer>
